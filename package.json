@@ -9,7 +9,6 @@
   "devDependencies": {
     "@roxi/routify": "next",
     "@sveltejs/vite-plugin-svelte": "latest",
-    "mdsvex": "latest",
     "svelte": "latest",
     "vite": "latest"
   }
