@@ -5,19 +5,19 @@ import { defineConfig } from 'vite'
 const production = process.env.NODE_ENV === 'production'
 
 export default defineConfig({
-  clearScreen: false,
+    clearScreen: false,
 
-  plugins: [
-    routify({
-      ssr: { enable: !!production },
-    }),
-    svelte({
-      compilerOptions: {
-        dev: !production,
-        hydratable: !!process.env.ROUTIFY_SSR_ENABLE,
-      },
-    }),
-  ],
+    plugins: [
+        routify({
+            ssr: { enable: !!production },
+        }),
+        svelte({
+            compilerOptions: {
+                dev: !production,
+                hydratable: !!process.env.ROUTIFY_SSR_ENABLE,
+            },
+        }),
+    ],
 
-  server: { port: 1337 },
+    server: { port: 1337 },
 })
